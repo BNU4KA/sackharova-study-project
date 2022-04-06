@@ -1,0 +1,75 @@
+/* header section */
+.MainHeader{
+    position:absolute;
+    top: 0;
+    height: 7%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* .MainHeader::after{
+    background-color: black;
+    padding: 2px;
+    height: 1px;
+    width: 100%;
+} */
+
+.headerComponent{
+    margin: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+.headerComponent_LoginButton{
+    background-color: blue;
+    border-radius: 15px;
+}
+
+/* body section  */
+.MainBodyContainer{
+    position: relative;
+    height: 85%;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyContantContainer{
+    width: 70%;
+    height: 100%;
+    padding-top: 150px;
+}
+
+.projectName{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+.projectDescription{
+    font-size: 20px;
+    color: black;
+}
+
+.bodyAdvantagesContent{
+    padding-top: 40px;
+    font-size: 10px;
+    color: black;
+    padding-right: 20px;
+}
+
+.body_LoginButton{
+    background-color: blue;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 150px;
+    justify-content: center;
+}
+
+.bodyProjectWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
