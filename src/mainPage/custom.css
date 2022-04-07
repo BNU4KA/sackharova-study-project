@@ -28,6 +28,7 @@
 }
 
 /* body section  */
+
 .MainBodyContainer{
     position: relative;
     height: 85%;
@@ -72,4 +73,52 @@
 .bodyProjectWrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* footer section  */
+
+.mainLoginComponent{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    /* background-repeat: no-repeat; */
+    background-image: url(https://img1.akspic.ru/crops/6/2/3/5/6/165326/165326-kiberpank_2077-kiberpank-zdanie-atmosfera-neboskreb-3840x2160.jpg);
+}
+
+.loginComponent{
+    border-radius: 15px;
+    width: 50%;
+    max-width: 500px;
+    height: 60%;
+    background-color: white;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LoginPageMainText{
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.loginFields{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 40px;
+    width: 350px;
+}
+
+.login_btn{
+    background-color: blue;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: black;
+    color: white;
+    padding: 7px 15px 7px 15px;
 }
