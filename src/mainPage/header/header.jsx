@@ -13,7 +13,7 @@ const MainPageHeader = () => {
             ))}
             <div className='headerComponent_LoginButton'>
               <a href='#'>
-              <div className='headerComponent' style={{ color: 'white', fontWeight: 'bold' }}>login button</div>
+              <button className='headerComponent' style={{ color: 'white', fontWeight: 'bold' }}>login button</button>
               </a>
             </div>
         </div>

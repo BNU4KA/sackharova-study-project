@@ -1,23 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../mainPage/custom.css'
-import { LoginPageFields } from './loginPageDumb'
+import { LoginPageFields, RegistrationPageFields } from './loginPageDumb'
 
-const Login = () => {
+const Login = (isLoginPage) => {
+  const [LoginPage, setIsLoginPage] = useState(false)
+  useEffect(() => {
+    setIsLoginPage(isLoginPage)
+  }, [isLoginPage])
+  const pageFormFields = LoginPage ? LoginPageFields : RegistrationPageFields
   return (
      <>
       <div className='mainLoginComponent'>
           <div className='loginComponent'>
               <p className='LoginPageMainText'>
-                  Login
+                  {LoginPage ? 'Login' : 'Registration'}
               </p>
+              <form>
               <div>
-              {LoginPageFields.map((fields, index) => (
+              {pageFormFields.map((fields, index) => (
                 <div key={index} className='loginFields'>
                     <input type='text' placeholder={fields.field} style={{ borderRadius: '7px', borderColor: 'black', borderWidth: '3px' }} />
                 </div>
               ))}
               </div>
-              <button className='login_btn'>Log In</button>
+                <button className='login_btn'>
+                    {LoginPage ? 'LogIn' : 'Registration'}
+                </button>
+              </form>
           </div>
       </div>
      </>
